@@ -1,0 +1,1 @@
+The CAP theorem, developed by Eric Brewer, states that ==in a distributed system, it's impossible to simultaneously guarantee all three of the following properties: consistency, availability, and partition tolerance==.
