@@ -17,9 +17,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # This file is reserved for global environment variables #
 ##########################################################
 
-# Setup Pyenv root
-export PYENV_ROOT="$HOME/.pyenv"
-
 # Setup NVM dir
 export NVM_DIR="$HOME/.nvm"
 
