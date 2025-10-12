@@ -17,9 +17,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # This file is reserved for global environment variables #
 ##########################################################
 
-# Setup fnm shell environment
-eval "$(fnm env --use-on-cd --shell zsh)"
-
 # Specify Java version
 export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 
@@ -44,6 +41,9 @@ FNM_PATH="/opt/homebrew/opt/fnm/bin"
 if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
+
+# Setup fnm shell environment
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # Setup uv and uvx shell auto completions
 eval "$(uv generate-shell-completion zsh)"
