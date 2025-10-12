@@ -17,8 +17,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # This file is reserved for global environment variables #
 ##########################################################
 
-# Setup NVM dir
-export NVM_DIR="$HOME/.nvm"
+# Setup fnm shell environment
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # Specify Java version
 export JAVA_HOME=$(/usr/libexec/java_home -v 17)
@@ -39,9 +39,11 @@ autoload -Uz compinit && compinit
 # Setup 1Password environment variables
 export EXAMPLE_1PASSWORD_SECRET=$(op read "op://Personal/43qnzaovikkbyaahclokeoq6ya/master-password")
 
-# Setup NVM
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+# fnm
+FNM_PATH="/opt/homebrew/opt/fnm/bin"
+if [ -d "$FNM_PATH" ]; then
+  eval "`fnm env`"
+fi
 
 # Setup uv and uvx shell auto completions
 eval "$(uv generate-shell-completion zsh)"
@@ -62,4 +64,18 @@ export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
 alias claude="/Users/[YOUR_USERNAME]/.claude/local/claude"
 
+```
+
+## Appendix
+
+### Setup fnm autocompletion
+
+```bash
+mkdir -p ~/.zfunc && fnm completions --shell zsh >> .zfunc/fnm
+```
+
+### Migrate Claude Code to local installation
+
+```bash
+claude migrate-installer
 ```
