@@ -45,10 +45,6 @@ fi
 # Setup fnm shell environment
 eval "$(fnm env --use-on-cd --shell zsh)"
 
-# Setup uv and uvx shell auto completions
-eval "$(uv generate-shell-completion zsh)"
-eval "$(uvx --generate-shell-completion zsh)"
-
 # Setup Databricks CLI completion
 fpath+=/opt/homebrew/share/zsh/site-functions
 autoload -Uz compinit && compinit
@@ -66,6 +62,10 @@ export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 alias claude="/Users/[YOUR_USERNAME]/.claude/local/claude"
 
 . "$HOME/.local/bin/env"
+
+# Setup uv and uvx shell auto completions
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
 
 ```
 
