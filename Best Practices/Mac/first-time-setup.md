@@ -4,7 +4,7 @@
 
 1. Download [Homebrew](https://brew.sh)
 2. Install `git` with `brew install git`
-3. Download [Xcode](https://apps.apple.com/us/app/xcode)
+3. Download [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 4. Download [Visual Studio Code](https://code.visualstudio.com)
 5. Download [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/)
 6. Download [Fast Node Manager (fnm)](https://github.com/Schniz/fnm)
