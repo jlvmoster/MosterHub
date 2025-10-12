@@ -62,7 +62,10 @@ export PATH="$PATH:/Users/[YOUR_USERNAME]/Library/Application Support/JetBrains/
 # Setup OpenJDK 17
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
+# Setup local Claude Code
 alias claude="/Users/[YOUR_USERNAME]/.claude/local/claude"
+
+. "$HOME/.local/bin/env"
 
 ```
 
