@@ -29,8 +29,8 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 # This file is reserved for interactive shell behavior #
 ########################################################
 
-# Setup .zfunc directory and Docker completions
-fpath=(/Users/[YOUR_USERNAME]/.zfunc /Users/[YOUR_USERNAME]/.docker/completions $fpath)
+# Setup .zfunc directory, Docker, and (optionally) Databricks CLI completions
+fpath=(/Users/[YOUR_USERNAME]/.zfunc /Users/[YOUR_USERNAME]/.docker/completions /opt/homebrew/share/zsh/site-functions $fpath)
 autoload -Uz compinit && compinit
 
 # Setup 1Password environment variables
@@ -44,10 +44,6 @@ fi
 
 # Setup fnm shell environment
 eval "$(fnm env --use-on-cd --shell zsh)"
-
-# Setup Databricks CLI completion
-fpath+=/opt/homebrew/share/zsh/site-functions
-autoload -Uz compinit && compinit
 
 # Setup local binaries
 export PATH="$PATH:/Users/[YOUR_USERNAME]/.local/bin"
