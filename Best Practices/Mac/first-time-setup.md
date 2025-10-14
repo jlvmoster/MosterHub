@@ -12,7 +12,6 @@
 8. Download [Claude Code](https://www.claude.com/product/claude-code)
 9. Download [uv](https://github.com/astral-sh/uv)
 10. Download [Java OpenJDK 17](https://formulae.brew.sh/formula/openjdk@17)
-11. Download [Rancher Desktop](https://rancherdesktop.io)
 
 ## Setup git
 
