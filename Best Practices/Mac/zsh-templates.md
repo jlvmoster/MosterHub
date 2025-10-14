@@ -67,6 +67,9 @@ alias claude="/Users/[YOUR_USERNAME]/.claude/local/claude"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
+# Setup Deno
+. "/Users/jalo/.deno/env"
+
 ```
 
 ## Appendix
