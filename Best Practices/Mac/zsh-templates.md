@@ -30,7 +30,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 ########################################################
 
 # Setup .zfunc directory and Docker completions
-fpath=(~/.zfunc /Users/jalo/.docker/completions $fpath)
+fpath=(~/.zfunc /Users/[YOUR_USERNAME]/.docker/completions $fpath)
 autoload -Uz compinit && compinit
 
 # Setup 1Password environment variables
