@@ -12,7 +12,8 @@
 8. Download [Claude Code](https://www.claude.com/product/claude-code)
 9. Download [uv](https://github.com/astral-sh/uv)
 10. Download [Java OpenJDK 17](https://formulae.brew.sh/formula/openjdk@17)
-11. Download [OrbStack](https://orbstack.dev/)
+11. Download [Deno](https://deno.com/)
+12. Download [OrbStack](https://orbstack.dev/)
 
 ## Setup git
 
