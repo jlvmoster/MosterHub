@@ -34,7 +34,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 ########################################################
 
 # Setup .zfunc directory and additional completions here
-fpath=(/Users/[YOUR_USERNAME]/.zfunc /opt/homebrew/share/zsh/site-functions $fpath)
+fpath=(/Users/[YOUR_USERNAME]/.zfunc /Users/[YOUR_USERNAME]/.zsh/completions /opt/homebrew/share/zsh/site-functions $fpath)
 autoload -Uz compinit && compinit
 
 # Setup 1Password environment variables
@@ -68,7 +68,7 @@ eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
 # Setup Deno
-. "/Users/jalo/.deno/env"
+. "/Users/[YOUR_USERNAME]/.deno/env"
 
 ```
 
