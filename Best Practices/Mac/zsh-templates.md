@@ -67,10 +67,6 @@ alias claude="/Users/[YOUR_USERNAME]/.claude/local/claude"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/[YOUR_USERNAME]/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
 ```
 
 ## Appendix
