@@ -22,3 +22,19 @@ git config --global init.defaultBranch master
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
+
+## Setup automatic git signing
+
+1. Generate a new SSH key (or use an existing one):
+
+```bash
+ssh-keygen -t ed25519 -C "your.email@example.com"
+```
+
+2. Configure git to sign commits and tags with your SSH key:
+
+```bash
+git config --global commit.gpgsign true
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/path/to/your/key.pub
+```
