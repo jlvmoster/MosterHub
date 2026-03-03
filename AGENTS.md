@@ -33,7 +33,7 @@ All files are owned by @jlvmoster (see `.github/CODEOWNERS`). The main branch is
 
 Follows the [Conventional Commits](https://www.conventionalcommits.org/) specification.
 
-**Format:** `type(scope): description`
+**Format:** `type(scope): description` or `type(scope)!: description`
 - Keep subject line within 50 characters
 - Wrap body lines at 72 characters
 - Use lowercase for type and scope
@@ -42,12 +42,14 @@ Follows the [Conventional Commits](https://www.conventionalcommits.org/) specifi
 - Focus on *why* the change was made, not just *what* changed
 
 **Types:**
-- `feat` - New content or files
-- `fix` - Corrections to existing content
+- `feat` - New content or files — *triggers minor version bump*
+- `fix` - Corrections to existing content — *triggers patch version bump*
 - `docs` - Meta-documentation (README indexes, table of contents)
 - `refactor` - Restructuring without changing content
 - `chore` - Maintenance tasks (moving, renaming, config changes)
 - `perf` - Performance improvements
+
+> Only `feat` and `fix` commits trigger a release. Adding `!` after the type (e.g., `feat!:`, `fix!:`, `refactor!:`) signals a breaking change and triggers a major version bump.
 
 **Scopes** (optional, based on top-level sections):
 - `getting-started` — Onboarding and setup guides
@@ -83,6 +85,13 @@ feat(getting-started): overhaul onboarding docs
 - Update root README table of contents with new links
 - Remove deprecated environment setup steps
 ```
+
+**Release-Please Footers:**
+
+These optional [git trailers](https://git-scm.com/docs/git-interpret-trailers) control release-please behavior when added to the commit body:
+
+- `Release-As: x.x.x` — Override the calculated version for the next release
+- `BREAKING CHANGE: description` — Triggers a major version bump (alternative to the `!` suffix)
 
 **Required Footer:**
 

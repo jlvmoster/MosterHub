@@ -10,6 +10,7 @@ A curated collection of best practices, principles, and methodologies for modern
 - [Linux](Linux/) - APT keyrings, kubectl, and SSH setup
 - [Mac](Mac/) - Homebrew, local dev setup, shortcuts, and Zsh templates
 - [React](React/) - Expo environment setup
+- [Releases](Releases/) - Automated versioning and changelog with release-please
 - [Security](Security/) - Security principles
 - [Windows](Windows/) - Local development setup
 
