@@ -19,7 +19,7 @@ Each top-level section has a `README.md` that serves as its index. The root `REA
 
 - **File naming**: lowercase, hyphen-separated (e.g., `first-time-setup.md`, `data-quality-best-practices.md`)
 - **Directory naming**: Title Case for topic directories (e.g., `Data/`, `Mac/`), numbered prefix with Title Case for top-level sections (e.g., `01 - Getting Started/`)
-- **New sections**: When adding a new top-level section, assign the next available number prefix and create a `README.md` index inside it. Update the root `README.md` table of contents accordingly.
+- **New sections**: When adding a new top-level section, assign the next available number prefix and create a `README.md` index inside it. Update the root `README.md` table of contents accordingly. Add a corresponding commit scope to the Commit Message Guidelines.
 
 ## Ownership
 
