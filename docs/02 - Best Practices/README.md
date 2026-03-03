@@ -1,8 +1,17 @@
-# Software Engineering Best Practices
+# Best Practices
 
-A curated collection of best practices, principles, and methodologies for modern software engineering.
+A curated collection of best practices, principles, and methodologies for modern software engineering. This serves as a living documentation of proven practices that enhance software quality, team productivity, and project maintainability.
 
-This repository serves as a living documentation of proven practices that enhance software quality, team productivity, and project maintainability. Contributions and suggestions are welcome through GitHub issues or direct contact.
+## Contents
+
+- [Agile](Agile/) - BDD and project management best practices
+- [Chick-fil-A](Chick-fil-A/) - The CHET Laws
+- [Data](Data/) - CAP theorem, data engineering, data quality, and OLTP
+- [Linux](Linux/) - APT keyrings, kubectl, and SSH setup
+- [Mac](Mac/) - Homebrew, local dev setup, shortcuts, and Zsh templates
+- [React](React/) - Expo environment setup
+- [Security](Security/) - Security principles
+- [Windows](Windows/) - Local development setup
 
 ## External Sources
 
